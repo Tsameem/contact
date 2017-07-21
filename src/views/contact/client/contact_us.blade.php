@@ -53,9 +53,7 @@
 			</div>
 		</div> --}}
 		<div class="form-group">
-			<button class="btn-md btn-bg-trans btn-bg-hover-black btn-border-grey btn-text-black btn-text-hover-white margin-none" type="submit">
-				<i style="" class="fa fa-send fa-fw fa-btn"></i>
-				&nbsp;
+			<button class="btn btn-primary" type="submit">
 				<span>Send</span>
 			</button>
 		</div>
