@@ -19,5 +19,7 @@ class ContactsController extends Controller
 			'email'	=> $request->email,
 			'text'	=> $request->text,
 		]);
+		
+		return back();
 	}
 }
