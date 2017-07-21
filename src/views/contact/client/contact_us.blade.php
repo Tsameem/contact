@@ -1,7 +1,7 @@
 @extends('tsameem.contact.layouts.app')
 @section('content')
 <div class="container">
-	<form action="{{ route('contact_store') }}" method="POST">
+	<form action="{{ route('contact_store') }}" method="POST" style="max-width: 600px; margin: 80px auto;">
 		{{csrf_field()}}
 		<div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
 			<label class="" for="name">Name:</label>
