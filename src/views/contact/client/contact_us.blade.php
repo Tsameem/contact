@@ -3,9 +3,9 @@
 <form action="{{ route('contact_store') }}" method="POST">
 	{{csrf_field()}}
 	<div class="form-group {{ $errors->has('name') ? 'has-error' : '' }}">
-		<label class="{{$lang=='en'?'pull-left ltr':''}}" for="name">{{__('forms.lbl_name')}}:</label>
-		<input class="form-control {{$lang=='en'?'ltr':''}}" id="input_name" type="text" name="name" placeholder="{{__('forms.ph_name')}}." value="{{old('name')}}" required autofocus>
-		<div class="{{$lang=='en'?'text-left ltr':''}}">
+		<label class="" for="name">{{__('forms.lbl_name')}}:</label>
+		<input class="form-control " id="input_name" type="text" name="name" placeholder="{{__('forms.ph_name')}}." value="{{old('name')}}" required autofocus>
+		<div class="">
 			@if ($errors->has('name'))
 			<span class="help-block">
 				<strong>{{ $errors->first('name') }}</strong>
@@ -14,9 +14,9 @@
 		</div>
 	</div>
 	<div class="form-group {{ $errors->has('email') ? 'has-error' : '' }}">
-		<label class="{{$lang=='en'?'pull-left ltr':''}}" for="email">{{__('forms.lbl_email')}}:</label>
-		<input class="form-control {{$lang=='en'?'ltr':''}}" id="input_email" type="text" name="email" placeholder="{{__('forms.ph_email')}}." value="{{ old('email') }}" required="">
-		<div class="{{$lang=='en'?'text-left ltr':''}}">
+		<label class="" for="email">{{__('forms.lbl_email')}}:</label>
+		<input class="form-control" id="input_email" type="text" name="email" placeholder="{{__('forms.ph_email')}}." value="{{ old('email') }}" required="">
+		<div class="">
 			@if ($errors->has('email'))
 			<span class="help-block">
 				<strong>{{ $errors->first('email') }}</strong>
@@ -25,9 +25,9 @@
 		</div>
 	</div>
 	<div class="form-group {{ $errors->has('text') ? 'has-error' : '' }}">
-		<label class="{{$lang=='en'?'pull-left ltr':''}}" for="text">{{__('forms.lbl_msg')}}:</label>
-		<textarea class="form-control {{$lang=='en'?'ltr':''}}" name="text" id="input_text" cols="30" rows="10" required>{{ old('text') }}</textarea>
-		<div class="{{$lang=='en'?'text-left ltr':''}}">
+		<label class="" for="text">{{__('forms.lbl_msg')}}:</label>
+		<textarea class="form-control" name="text" id="input_text" cols="30" rows="10" required>{{ old('text') }}</textarea>
+		<div class="">
 			@if ($errors->has('text'))
 			<span class="help-block">
 				<strong>{{ $errors->first('text') }}</strong>
