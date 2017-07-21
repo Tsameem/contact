@@ -1,0 +1,18 @@
+{
+    "name": "tsameem/contact",
+    "description": "a package that creates all related files for contact us form",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tsameem",
+            "email": "info@tsameem.com",
+            "homepage": "http://tsameem.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Tsameem\\Contact\\": "src"
+        }
+    }
+}
