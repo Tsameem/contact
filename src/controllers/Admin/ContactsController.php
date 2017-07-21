@@ -8,6 +8,6 @@ class ContactsController extends Controller
 {
 	public function index()
 	{
-		return view('tsameem.contact.admin.contact-us');
+		return view('tsameem.contact.admin.contact_us');
 	}
 }
