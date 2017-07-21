@@ -10,7 +10,7 @@ class ContactsController extends Controller
 {
 	public function index()
 	{
-		return view('tsameem.contact.client.contact-us');
+		return view('tsameem.contact.client.contact_us');
 	}
 	public function store(ContactRequest $request)
 	{
